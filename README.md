@@ -20,7 +20,7 @@ fn main() {
 How to use?
 ```rust
 [dependencies]
-minipool = "*"
+minipooll = "*"
 ```
 
 
