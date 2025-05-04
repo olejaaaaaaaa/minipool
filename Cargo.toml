@@ -1,0 +1,14 @@
+[package]
+name = "minipooll"
+version = "1.0.0"
+edition = "2024"
+authors = ["Oleg Pavlenko"]
+description = "Pool threads without dependencies"
+repository = "https://github.com/olejaaaaaaaa/minipool/"
+keywords = ["pool", "threads", "nodependencies"]
+categories = ["rust"]
+documentation = "https://docs.rs/minipool"
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
