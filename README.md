@@ -10,10 +10,17 @@ No have dependencies.
 fn main() {
     let mut pool = MiniPooll::new();
     pool.spawn(|| {
-        std::thread::sleep(Duration::from_secs(2))
+        std::thread::sleep(Duration::from_secs(2));
     });
 
+    pool.spawn_with_timeout(|| {
+        // ... some cpu task
+        std::thread::sleep(Duration::from_secs(60));
+        // end
+    }, std::time::Duration::from_secs(2));
+
     pool.join_all();
+    // 2s elapsed
 }
 ```
 
